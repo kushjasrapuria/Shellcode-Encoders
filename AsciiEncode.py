@@ -78,4 +78,6 @@ seshellcode = ''.join(f'\\x{b:02x}' for b in eshellcode)
 print(seshellcode)
 
 sizereq = len(shellcode)+len(eshellcode)
+print(f"Shellcode size: {len(shellcode)}")
+print(f"Encoded shellcode size: {len(eshellcode)}")
 print(f"Minimum memory required to properly execute shellcode: {sizereq} (Note : Memory required can differ considering multiple factors and nature of execution of this shellcode)")
